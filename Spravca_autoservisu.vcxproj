@@ -95,11 +95,13 @@
     <QtRcc Include="Spravca_autoservisu.qrc" />
     <QtUic Include="Spravca_autoservisu.ui" />
     <QtMoc Include="Spravca_autoservisu.h" />
+    <ClCompile Include="Auto.cpp" />
     <ClCompile Include="Osobny.cpp" />
     <ClCompile Include="Spravca_autoservisu.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Auto.h" />
     <ClInclude Include="Osobny.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
