@@ -92,6 +92,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Uzitkovy.cpp" />
     <QtRcc Include="Spravca_autoservisu.qrc" />
     <QtUic Include="Spravca_autoservisu.ui" />
     <QtMoc Include="Spravca_autoservisu.h" />
@@ -103,6 +104,7 @@
   <ItemGroup>
     <ClInclude Include="Auto.h" />
     <ClInclude Include="Osobny.h" />
+    <ClInclude Include="Uzitkovy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
