@@ -21,7 +21,7 @@ public:
 
 	string CSV()
 	{
-		return "Car, " + znacka_auta + ", " + model_auta + ", " + to_string(rok_vyroby) + ", " + to_string(km) + ", " + to_string(bol_v_servise);
+		return "Car," + znacka_auta + "," + model_auta + "," + to_string(rok_vyroby) + "," + to_string(km) + "," + to_string(bol_v_servise);
 	}
 
 	~Osobny () {}
