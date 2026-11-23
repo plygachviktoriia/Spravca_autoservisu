@@ -72,6 +72,24 @@ bool AutoservisManager::LoadFILE(const QString& cesta)
 
 bool AutoservisManager::SaveFILE(const QString& cesta)
 {
+    QFile file(cesta);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        qWarning() << "Nepodarilo sa otvorit subor" << file.errorString();
+        return false;
+    }
+
+    QTextStream out(&file);
+
+    int size = list_aut.size();
+
+    for (int i = 0; i < size; i++)
+    {
+        out << QString::fromStdString(list_aut[i]->CSV()) << '\n';
+    }
+
+    file.close();
+
     return true;
 }
 
